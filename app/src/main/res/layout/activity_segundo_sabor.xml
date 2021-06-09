@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C0B0B"
+    tools:context=".SegundoSabor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7C0B0B"
+        tools:context=".Sabores">
+
+        <Button
+            android:id="@+id/btConfirmar2"
+            android:layout_width="190dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="52dp"
+            android:background="#DE9217"
+            android:fontFamily="@font/actor"
+            android:text="Confirmar"
+            app:backgroundTint="#DE9217"
+            app:cornerRadius="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+            app:layout_constraintVertical_bias="0.916" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10"
+            app:layout_constraintVertical_bias="0.202">
+
+            <RadioButton
+                android:id="@+id/rbAlho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_orange_light"
+                android:text="Alho e Oleo"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbCalabresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_orange_light"
+                android:text="Calabresa"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbCoracao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_orange_light"
+                android:text="Coração"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbFilet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_orange_light"
+                android:text="Filet com Cheddar"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbMarguerita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_orange_light"
+                android:text="Marguerita"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbPalmito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_orange_light"
+                android:text="Palmito"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbPortuguesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_orange_light"
+                android:text="Portuguesa"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbQueijos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_orange_light"
+                android:text="Quatro Queijos"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbStrogonoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_orange_light"
+                android:text="Strogonoff"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName10"
+            android:layout_width="365dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/design_default_color_background"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Escolha o segundo sabor"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

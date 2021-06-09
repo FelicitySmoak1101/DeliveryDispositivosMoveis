@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C0B0B"
+    tools:context=".QtdSaboresMedia">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228">
+
+        <RadioButton
+            android:id="@+id/rbUmSabor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/holo_orange_light"
+            android:text="1 Sabor"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbDoisSabores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/holo_orange_light"
+            android:text="2 Sabores"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnProximo2"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:background="#DE9217"
+        android:fontFamily="@font/actor"
+        android:text="Próximo"
+        app:backgroundTint="#DE9217"
+        app:cornerRadius="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="332dp"
+        android:layout_height="66dp"
+        android:backgroundTint="@color/design_default_color_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Quantidade de sabores"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
