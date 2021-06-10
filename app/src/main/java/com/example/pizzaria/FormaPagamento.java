@@ -27,19 +27,31 @@ public class FormaPagamento extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                String sabor1 = getIntent().getStringExtra("sabor");
+                String sabor2 = getIntent().getStringExtra("sabor2");
+                String sabor3 = getIntent().getStringExtra("sabor3");
+                String sabor4 = getIntent().getStringExtra("sabor4");
                 String pagamento;
 
                 if (Dinheiro.isChecked()==true)
                 {
-                    pagamento = "Dinheiro");
+                    pagamento = "Dinheiro";
                     Intent intent = new Intent(FormaPagamento.this, Dashboard.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
+                    intent.putExtra("sabor4",sabor4);
                     intent.putExtra("pagamento", pagamento);
                     startActivity(intent);
                 }
                 if (Credito.isChecked()==true)
                 {
-                    pagamento = "Credito");
+                    pagamento = "Credito";
                     Intent intent = new Intent(FormaPagamento.this, Dashboard.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
+                    intent.putExtra("sabor4",sabor4);
                     intent.putExtra("pagamento", pagamento);
                     startActivity(intent);
                 }
@@ -47,6 +59,10 @@ public class FormaPagamento extends AppCompatActivity {
                 {
                     pagamento = "Debito";
                     Intent intent = new Intent(FormaPagamento.this, Dashboard.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
+                    intent.putExtra("sabor4",sabor4);
                     intent.putExtra("pagamento", pagamento);
                     startActivity(intent);
                 }
@@ -54,6 +70,10 @@ public class FormaPagamento extends AppCompatActivity {
                 {
                     pagamento = "Pix";
                     Intent intent = new Intent(FormaPagamento.this, Dashboard.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
+                    intent.putExtra("sabor4",sabor4);
                     intent.putExtra("pagamento", pagamento);
                     startActivity(intent);
                 }

@@ -31,12 +31,18 @@ public class QuartoSabor extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                String sabor1 = getIntent().getStringExtra("sabor");
+                String sabor2 = getIntent().getStringExtra("sabor2");
+                String sabor3 = getIntent().getStringExtra("sabor3");
                 String sabor4;
 
                 if (Alho4.isChecked()==true)
                 {
                     sabor4 = "Alho";
                     Intent intent = new Intent(QuartoSabor.this, FormaPagamento.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
                     intent.putExtra("sabor4",sabor4);
                     startActivity(intent);
                 }
@@ -44,6 +50,9 @@ public class QuartoSabor extends AppCompatActivity {
                 {
                     sabor4 = "Calabresa";
                     Intent intent = new Intent(QuartoSabor.this, FormaPagamento.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
                     intent.putExtra("sabor4",sabor4);
                     startActivity(intent);
                 }
@@ -51,6 +60,9 @@ public class QuartoSabor extends AppCompatActivity {
                 {
                     sabor4 = "Coracao";
                     Intent intent = new Intent(QuartoSabor.this, FormaPagamento.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
                     intent.putExtra("sabor4",sabor4);
                     startActivity(intent);
                 }
@@ -58,6 +70,9 @@ public class QuartoSabor extends AppCompatActivity {
                 {
                     sabor4 = "Filet";
                     Intent intent = new Intent(QuartoSabor.this, FormaPagamento.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
                     intent.putExtra("sabor4",sabor4);
                     startActivity(intent);
                 }
@@ -65,6 +80,9 @@ public class QuartoSabor extends AppCompatActivity {
                 {
                     sabor4 = "Marguerita";
                     Intent intent = new Intent(QuartoSabor.this, FormaPagamento.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
                     intent.putExtra("sabor4",sabor4);
                     startActivity(intent);
                 }
@@ -72,6 +90,9 @@ public class QuartoSabor extends AppCompatActivity {
                 {
                     sabor4 = "Palmito";
                     Intent intent = new Intent(QuartoSabor.this, FormaPagamento.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
                     intent.putExtra("sabor4",sabor4);
                     startActivity(intent);
                 }
@@ -79,6 +100,9 @@ public class QuartoSabor extends AppCompatActivity {
                 {
                     sabor4 = "Portuguesa";
                     Intent intent = new Intent(QuartoSabor.this, FormaPagamento.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
                     intent.putExtra("sabor4",sabor4);
                     startActivity(intent);
                 }
@@ -86,6 +110,9 @@ public class QuartoSabor extends AppCompatActivity {
                 {
                     sabor4 = "Quatro Queijos";
                     Intent intent = new Intent(QuartoSabor.this, FormaPagamento.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
                     intent.putExtra("sabor4",sabor4);
                     startActivity(intent);
                 }
@@ -93,6 +120,9 @@ public class QuartoSabor extends AppCompatActivity {
                 {
                     sabor4 = "Strogonoff";
                     Intent intent = new Intent(QuartoSabor.this, FormaPagamento.class);
+                    intent.putExtra("sabor",sabor1);
+                    intent.putExtra("sabor2",sabor2);
+                    intent.putExtra("sabor3",sabor3);
                     intent.putExtra("sabor4",sabor4);
                     startActivity(intent);
                 }

@@ -29,18 +29,18 @@ public class Dashboard extends AppCompatActivity {
 
                 pedido.setNomeCompleto(findViewById(R.id.nomeCompleto).toString());
                 pedido.setEndereco(findViewById(R.id.endereco).toString());
-                pedido.setNumero(Integer.parseInt(findViewById(R.id.numero).toString()));
+                pedido.setNumero(findViewById(R.id.numero).toString());
                 pedido.setComplemento(findViewById(R.id.complemento).toString());
-                pedido.setTelefone(Integer.parseInt(findViewById(R.id.telefone).toString()));
+                pedido.setTelefone(findViewById(R.id.telefone).toString());
                 pedido.setPrimeiroSabor(primeiroSabor);
                 pedido.setSegundoSabor(segundoSabor);
                 pedido.setTerceiroSabor(terceiroSabor);
                 pedido.setQuartoSabor(quartoSabor);
                 pedido.setFormaPagamento(pagamento);
+                pedido.salvar();
 
                 Intent intent = new Intent(Dashboard.this, Status.class);
                 startActivity(intent);
-                pedido.salvar();
             }
         });
     }

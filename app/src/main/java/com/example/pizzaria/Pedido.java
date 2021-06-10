@@ -6,9 +6,9 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Pedido {
     private String nomeCompleto;
     private String endereco;
-    private Integer numero;
+    private String numero;
     private String complemento;
-    private Integer telefone;
+    private String telefone;
     private String primeiroSabor;
     private String segundoSabor;
     private String terceiroSabor;
@@ -18,7 +18,7 @@ public class Pedido {
     public Pedido() {
     }
 
-    public Pedido(String nomeCompleto, String endereco, Integer numero, String complemento, Integer telefone, String primeiroSabor, String segundoSabor, String terceiroSabor, String quartoSabor, String formaPagamento) {
+    public Pedido(String nomeCompleto, String endereco, String numero, String complemento, String telefone, String primeiroSabor, String segundoSabor, String terceiroSabor, String quartoSabor, String formaPagamento) {
         this.nomeCompleto = nomeCompleto;
         this.endereco = endereco;
         this.numero = numero;
@@ -47,11 +47,11 @@ public class Pedido {
         this.endereco = endereco;
     }
 
-    public Integer getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(Integer numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
@@ -63,11 +63,11 @@ public class Pedido {
         this.complemento = complemento;
     }
 
-    public Integer getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(Integer telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 

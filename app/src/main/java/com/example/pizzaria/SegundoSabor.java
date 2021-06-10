@@ -32,6 +32,7 @@ public class SegundoSabor extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Integer qtdSabores = getIntent().getIntExtra("qtd",0);
+                String sabor1 = getIntent().getStringExtra("sabor");
                 String sabor2;
                 if (qtdSabores.equals(2))
                 {
@@ -39,6 +40,7 @@ public class SegundoSabor extends AppCompatActivity {
                     {
                         sabor2 = "Alho";
                         Intent intent = new Intent(SegundoSabor.this, FormaPagamento.class);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -46,6 +48,7 @@ public class SegundoSabor extends AppCompatActivity {
                     {
                         sabor2 = "Calabresa";
                         Intent intent = new Intent(SegundoSabor.this, FormaPagamento.class);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -53,6 +56,7 @@ public class SegundoSabor extends AppCompatActivity {
                     {
                         sabor2 = "Coracao";
                         Intent intent = new Intent(SegundoSabor.this, FormaPagamento.class);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -60,6 +64,7 @@ public class SegundoSabor extends AppCompatActivity {
                     {
                         sabor2 = "Filet";
                         Intent intent = new Intent(SegundoSabor.this, FormaPagamento.class);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -67,6 +72,7 @@ public class SegundoSabor extends AppCompatActivity {
                     {
                         sabor2 = "Marguerita";
                         Intent intent = new Intent(SegundoSabor.this, FormaPagamento.class);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -74,6 +80,7 @@ public class SegundoSabor extends AppCompatActivity {
                     {
                         sabor2 = "Palmito";
                         Intent intent = new Intent(SegundoSabor.this, FormaPagamento.class);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -81,6 +88,7 @@ public class SegundoSabor extends AppCompatActivity {
                     {
                         sabor2 = "Portuguesa";
                         Intent intent = new Intent(SegundoSabor.this, FormaPagamento.class);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -88,6 +96,7 @@ public class SegundoSabor extends AppCompatActivity {
                     {
                         sabor2 = "Quatro Queijos";
                         Intent intent = new Intent(SegundoSabor.this, FormaPagamento.class);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -95,6 +104,7 @@ public class SegundoSabor extends AppCompatActivity {
                     {
                         sabor2 = "Strogonoff";
                         Intent intent = new Intent(SegundoSabor.this, FormaPagamento.class);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -106,6 +116,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Alho";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -114,6 +125,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Calabresa";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -122,6 +134,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Coracao";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -130,6 +143,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Filet";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -138,6 +152,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Marguerita";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -146,6 +161,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Palmito";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -154,6 +170,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Portuguesa";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -162,6 +179,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Quatro Queijos";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -170,6 +188,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Strogonoff";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -182,6 +201,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Alho";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -190,6 +210,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Calabresa";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -198,6 +219,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Coracao";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -206,6 +228,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Filet";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -214,6 +237,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Marguerita";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -222,6 +246,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Palmito";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -230,6 +255,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Portuguesa";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -238,6 +264,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Quatro Queijos";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
@@ -246,6 +273,7 @@ public class SegundoSabor extends AppCompatActivity {
                         sabor2 = "Strogonoff";
                         Intent intent = new Intent(SegundoSabor.this, TerceiroSabor.class);
                         intent.putExtra("qtd",qtdSabores);
+                        intent.putExtra("sabor",sabor1);
                         intent.putExtra("sabor2",sabor2);
                         startActivity(intent);
                     }
