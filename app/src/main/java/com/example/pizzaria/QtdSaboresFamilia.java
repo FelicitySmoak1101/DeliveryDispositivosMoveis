@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class QtdSaboresFamilia extends AppCompatActivity {
 
     @Override
@@ -46,6 +48,7 @@ public class QtdSaboresFamilia extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Integer quantidade =0;
+
                 if (umSabor3.isChecked() == true) {
                     quantidade = 1;
                 }
@@ -62,6 +65,8 @@ public class QtdSaboresFamilia extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"Nenhuma quantidade de sabor foi selecionada!",Toast.LENGTH_SHORT).show();
                 }
+
+
                 Intent intent = new Intent(QtdSaboresFamilia.this, Sabores.class);
                 intent.putExtra("tamanho",tam);
                 intent.putExtra("qtd",quantidade);

@@ -8,14 +8,14 @@
     tools:context=".Dashboard">
 
     <EditText
-        android:id="@+id/editTextTextPersonName11"
+        android:id="@+id/nomeCompleto"
         android:layout_width="262dp"
         android:layout_height="45dp"
         android:backgroundTint="@color/design_default_color_background"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nome Completo"
-        android:textColor="#FFFFFF"
+        android:hint="Nome Completo"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.268"
@@ -24,14 +24,14 @@
         app:layout_constraintVertical_bias="0.177" />
 
     <EditText
-        android:id="@+id/editTextPhone2"
+        android:id="@+id/telefone"
         android:layout_width="262dp"
         android:layout_height="47dp"
         android:backgroundTint="@color/design_default_color_background"
         android:ems="10"
         android:inputType="phone"
-        android:text="Telefone"
-        android:textColor="#FFFFFF"
+        android:hint="Telefone"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.268"
@@ -40,14 +40,14 @@
         app:layout_constraintVertical_bias="0.441" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName13"
+        android:id="@+id/numero"
         android:layout_width="262dp"
         android:layout_height="45dp"
         android:backgroundTint="@color/design_default_color_background"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Número"
-        android:textColor="#FFFFFF"
+        android:hint="Número"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.268"
@@ -56,14 +56,14 @@
         app:layout_constraintVertical_bias="0.309" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName14"
+        android:id="@+id/complemento"
         android:layout_width="262dp"
         android:layout_height="45dp"
         android:backgroundTint="@color/design_default_color_background"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Complemento"
-        android:textColor="#FFFFFF"
+        android:hint="Complemento"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.268"
@@ -72,14 +72,14 @@
         app:layout_constraintVertical_bias="0.374" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName12"
+        android:id="@+id/endereco"
         android:layout_width="262dp"
         android:layout_height="45dp"
         android:backgroundTint="@color/design_default_color_background"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Endereço"
-        android:textColor="#FFFFFF"
+        android:hint="Endereço"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.268"
