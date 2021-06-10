@@ -26,34 +26,35 @@ public class FormaPagamento extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Pedido pedido5 = new Pedido();
+
+                String pagamento;
 
                 if (Dinheiro.isChecked()==true)
                 {
-                    pedido5.setFormaPagamento("Dinheiro");
+                    pagamento = "Dinheiro");
                     Intent intent = new Intent(FormaPagamento.this, Dashboard.class);
-                    intent.putExtra("pagamento", pedido5.getFormaPagamento());
+                    intent.putExtra("pagamento", pagamento);
                     startActivity(intent);
                 }
                 if (Credito.isChecked()==true)
                 {
-                    pedido5.setFormaPagamento("Credito");
+                    pagamento = "Credito");
                     Intent intent = new Intent(FormaPagamento.this, Dashboard.class);
-                    intent.putExtra("pagamento", pedido5.getFormaPagamento());
+                    intent.putExtra("pagamento", pagamento);
                     startActivity(intent);
                 }
                 if (Debito.isChecked()==true)
                 {
-                    pedido5.setFormaPagamento("Debito");
+                    pagamento = "Debito";
                     Intent intent = new Intent(FormaPagamento.this, Dashboard.class);
-                    intent.putExtra("pagamento", pedido5.getFormaPagamento());
+                    intent.putExtra("pagamento", pagamento);
                     startActivity(intent);
                 }
                 if (Pix.isChecked()==true)
                 {
-                    pedido5.setFormaPagamento("Pix");
+                    pagamento = "Pix";
                     Intent intent = new Intent(FormaPagamento.this, Dashboard.class);
-                    intent.putExtra("pagamento", pedido5.getFormaPagamento());
+                    intent.putExtra("pagamento", pagamento);
                     startActivity(intent);
                 }
 
