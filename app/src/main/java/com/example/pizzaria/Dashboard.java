@@ -37,7 +37,7 @@ public class Dashboard extends AppCompatActivity {
                 pedido.setTerceiroSabor(terceiroSabor);
                 pedido.setQuartoSabor(quartoSabor);
                 pedido.setFormaPagamento(pagamento);
-                pedido.salvar();
+                pedido.salvar(pedido);
 
                 Intent intent = new Intent(Dashboard.this, Status.class);
                 startActivity(intent);

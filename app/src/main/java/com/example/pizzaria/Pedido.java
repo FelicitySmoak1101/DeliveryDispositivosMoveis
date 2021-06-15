@@ -111,7 +111,7 @@ public class Pedido {
         this.formaPagamento = formaPagamento;
     }
 
-    public void salvar()
+    public void salvar(Pedido pedido)
     {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
         reference.child("pedido").child(getNomeCompleto()).setValue(this);
