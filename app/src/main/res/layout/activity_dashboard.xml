@@ -15,6 +15,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Nome Completo"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
